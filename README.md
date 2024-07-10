@@ -11,7 +11,7 @@ Brief description or overview of your project.
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
@@ -65,14 +65,3 @@ If you would like to contribute to this project, you can follow these steps:
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
 
-## License
-
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
-
----
-
-### Notes:
-
-- Replace `[Project Name]`, `[License Name]`, and placeholders with your actual project name, license type, and relevant details.
-- Include additional sections or details specific to your project, such as deployment instructions, API documentation, or configuration settings.
-- Make sure to provide clear and concise instructions so that new users and contributors can understand and use your project effectively.
