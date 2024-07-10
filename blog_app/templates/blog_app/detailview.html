@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>{{ post.title }}</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">{{ post.title }}</h1>
+                    <p class="card-text">{{ post.content }}</p>
+                    <p class="card-text"><strong>Author:</strong> {{ post.author.username }}</p>
+                    <p class="card-text"><strong>Published:</strong> {{ post.created_at }}</p>
+                    <p class="card-text"><strong>Categories:</strong> {% for category in post.categories.all %}{{ category.name }} {% endfor %}</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h2>Comments</h2>
+                <ul class="list-group">
+                    {% for comment in post.comments.all %}
+                    <li class="list-group-item">{{ comment.author.username }}: {{ comment.content }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
