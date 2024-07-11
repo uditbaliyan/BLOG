@@ -20,10 +20,11 @@ from .views import *
 
 urlpatterns = [
     # path('',front_page,name="front_page" ),
-    path('', Home.as_view(), name='Home'),
+    path('home', Home.as_view(), name='Home'),
     path('post/<int:pk>/', Post_DetailView.as_view(), name='post_detail'),
     path('delete/<int:pk>/', Post_DeleteView.as_view(), name='post_delete'),
     path('update/<int:pk>/', Post_UpdateView.as_view(), name='post_update'),
     path('create/', Post_CreateView.as_view(), name='post_create'),
+    path('', register, name='register'),
 
 ]
